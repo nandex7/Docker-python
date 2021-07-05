@@ -2,15 +2,21 @@
 Docker container for running python application with Flask
 Steps for running the application . You have to install Docker before.
 
+```
 docker build -t python-helloworld .
-
+```
+```
 sudo docker images
-
+```
+```
 sudo docker run -d -p 5000:5000 python-helloworld
-
+```
+```
 sudo docker tag python-helloworld pixelpotato/python-helloworld:v1.0.0
-
+```
+```
 docker login --username 313190
+```
 
 # Summary
 
