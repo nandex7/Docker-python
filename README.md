@@ -26,40 +26,65 @@ Note: In the following commands the following arguments are used:
 •	IMAGE - sets the name of the image
 •	NAME- set the name of the image
 •	COMMAND and ARG - instruct the container to run specific commands associated with a set of arguments
-Build Images
+## Build Images
 
 To build an image, use the following command, where PATH sets the location of the Dockerfile and referenced application files:
-docker build [OPTIONS] PATH
-Run Images
-To run an image, use the following command:
-docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-Get Logs
+```
+docker build [OPTIONS] PATH
+```
+
+## Run Images
+To run an image, use the following command:
+
+```
+docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+```
+
+## Get Logs
+
 To get the logs from a Docker container, use the following command:
 docker logs CONTAINER_ID
 Where the CONTAINER_ID is the ID of the Docker container that runs an application.
 
-List Images
+## List Images
 To list all available images, use the following command:
+
+```
 docker images
+```
 
-List Containers
+## List Containers
 To list all running containers, use the following command:
-docker ps
 
-Tag Images
+```
+docker ps
+```
+
+## Tag Images
+
 To tag an image, use the following command, where SOURCE_IMAGE defines the name of an image on the current machine and TARGET_IMAGE defines the repository, name, and version of an image:
 docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 
-Login to DockerHub
+## Login to DockerHub
 To login into DockerHub, use the following command:
+
+```
 docker login
+```
 
-Push Images
+## Push Images
 To push an image to DockerHub, use the following command:
-docker push NAME[:TAG]
 
-Pull Images
+```
+docker push NAME[:TAG]
+```
+
+## Pull Images
+
 To pull an image from DockerHub, use the following command:
+
+```
 docker pull NAME[:TAG]
+```
 
