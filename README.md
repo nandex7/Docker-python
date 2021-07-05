@@ -26,6 +26,7 @@ Note: In the following commands the following arguments are used:
 •	IMAGE - sets the name of the image
 •	NAME- set the name of the image
 •	COMMAND and ARG - instruct the container to run specific commands associated with a set of arguments
+
 ## Build Images
 
 To build an image, use the following command, where PATH sets the location of the Dockerfile and referenced application files:
@@ -35,6 +36,7 @@ docker build [OPTIONS] PATH
 ```
 
 ## Run Images
+
 To run an image, use the following command:
 
 ```
@@ -48,6 +50,7 @@ docker logs CONTAINER_ID
 Where the CONTAINER_ID is the ID of the Docker container that runs an application.
 
 ## List Images
+
 To list all available images, use the following command:
 
 ```
@@ -55,6 +58,7 @@ docker images
 ```
 
 ## List Containers
+
 To list all running containers, use the following command:
 
 ```
@@ -67,6 +71,7 @@ To tag an image, use the following command, where SOURCE_IMAGE defines the name 
 docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 
 ## Login to DockerHub
+
 To login into DockerHub, use the following command:
 
 ```
